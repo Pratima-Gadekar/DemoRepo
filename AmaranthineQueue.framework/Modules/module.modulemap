@@ -1,0 +1,11 @@
+framework module AmaranthineQueue {
+  umbrella header "AmaranthineQueue.h"
+
+  export *
+  module * { export * }
+}
+
+module AmaranthineQueue.Swift {
+    header "AmaranthineQueue-Swift.h"
+    requires objc
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Rating" representedClassName="Rating" syncable="YES" codeGenerationType="class">
+        <attribute name="ambience" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="food" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="service" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="response" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Response" inverseName="ratings" inverseEntity="Response" syncable="YES"/>
+    </entity>
+    <entity name="Response" representedClassName="Response" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cellPhone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surveyDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="ratings" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rating" inverseName="response" inverseEntity="Rating" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Rating" positionX="-54" positionY="27" width="128" height="105"/>
+        <element name="Response" positionX="-358.40234375" positionY="-175.796875" width="128" height="148"/>
+    </elements>
+</model>
