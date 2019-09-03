@@ -25,6 +25,8 @@ class InformationViewController: UIViewController, MFMailComposeViewControllerDe
         responseInfo[4].text = "\((data?.ratings.ambienceRating)!)"
         responseInfo[5].text = "\((data?.ratings.serviceRating)!)"
         
+        let thisbethevariable = "let theis be the varailble bjdkd"
+        
         let dateFormatter       = DateFormatter()
         dateFormatter.dateStyle = .medium
         
