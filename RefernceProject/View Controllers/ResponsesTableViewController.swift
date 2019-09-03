@@ -9,6 +9,57 @@
 import UIKit
 
 class ResponsesTableViewController: UITableViewController {
+    
+    class A
+    {
+        class func add() {
+            print("add")
+        }
+        static func newadd() {
+            print("newadd")
+            
+        }
+        func notypeadd()
+        {
+            print("notypeadd")
+        }
+        
+        func Sumation<Element>(First first : inout Element, Second second : inout Element)
+        {
+            let temp = first
+            first = second
+            second = temp
+        }
+        
+        var num1 = 10
+        var num2 = 20
+        
+        //Sumation(First: &num1, Second: &num2)
+        //print("Swapper : \(num1), \(num2)")
+    }
+    
+    
+    
+    //setting values to properties
+    //Default Initializers  -- no need to call constructors
+    
+    //memberwise Initializer
+    
+    struct Point
+    {
+        var xcord : Float = 0.0
+        var ycord : Float = 1.0
+    }
+    
+    var this : Point = Point(xcord: 1.0, ycord: 2.0)
+    
+    // Convenice and designated initializer
+    
+    //Initializer Process
+    
+    // Generic Functions!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
